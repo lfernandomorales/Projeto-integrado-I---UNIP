@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Descarte</title>
+    <link rel="stylesheet" href="./css/descarte.css">
+    <script src="js/auth.js"></script>
+    <script src="js/descarte.js" defer></script>
+</head>
+<body onload="renderNavbar()">
+    <div id="navbar"></div>
+
+    <div class="container">
+        <h2>Registrar Descarte</h2>
+
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Quantidade</th>
+                    <th id="acoes">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+
+        <button onclick="adicionarLinha()">+ Adicionar</button>
+
+        <div class="total">
+            Total: <span id="total">0</span>
+        </div>
+
+        <button class="btn-enviar" onclick="registrarDescarte()">Enviar</button>
+    </div>
+</body>
+</html>

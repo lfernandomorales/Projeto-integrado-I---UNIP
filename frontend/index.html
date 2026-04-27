@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reciclagem</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <script src="js/auth.js"></script>
+  </head>
+<body onload="renderNavbar()">
+
+<div id="navbar"></div>
+
+<div class="container">
+    <div class="map-section">
+        <h1>Encontre pontos de descarte</h1>
+        <div class="map-controls">
+            <input type="text" id="endereco" placeholder="Digite seu endereço">
+            <button onclick="buscarMapa()">Buscar</button>
+        </div>
+        <br><br>
+
+        <iframe id="mapa" width="600" height="400" src="https://www.google.com/maps?q=reciclagem+ribeirão+preto&output=embed"></iframe>
+    </div>    
+    <div class="ranking-section">
+        <h2>Ranking</h2>
+        <ul id="ranking"></ul>
+    </div>
+</div>
+</body>
+    
+</html>
